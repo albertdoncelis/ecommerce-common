@@ -2,7 +2,11 @@
   "name": "@acelis-ecommerce/common",
   "version": "1.0.2",
   "description": "",
-  "main": "",
+  "main": "./build/index.js",
+  "types": "./build/index.d.ts",
+  "files": [
+    "build/**/*"
+  ],
   "scripts": {
     "clean": "del ./build/*",
     "build": "npm run clean && tsc",
