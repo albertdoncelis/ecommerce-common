@@ -1,0 +1,23 @@
+{
+  "name": "@acelis/ecommerce-common",
+  "version": "1.0.0",
+  "description": "",
+  "main": "",
+  "scripts": {
+    "clean": "del ./build/*",
+    "build": "npm run clean && tsc",
+    "pub": "git add . && git commit -m \"Update\" && npm version patch && npm run build && npm publish"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jsonwebtoken": "^8.5.4",
+    "@types/node": "^16.4.13",
+    "del-cli": "^4.0.1",
+    "ts-node": "^10.1.0",
+    "typescript": "^4.3.5"
+  },
+  "dependencies": {
+    "node-nats-streaming": "^0.3.2"
+  }
+}
